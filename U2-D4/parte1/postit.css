@@ -47,9 +47,24 @@ body {
   font-family: "Indie Flower";
 }
 /* attribuisco a ogni post-it un'angolazione */
+@keyframes colorShift {
+  from {
+    background-color: rgba(255, 255, 185, 0);
+  }
+  to {
+    background-color: rgb(241, 124, 78);
+  }
+}
 .n1 {
   background-color: rgb(255, 255, 185);
   transform: rotate(350deg);
+}
+
+.box:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 0 6px 30px 0px rgb(0 0 0 / 20%);
+  animation: colorShift 3s;
 }
 .n2 {
   background-color: rgb(173, 235, 173);
