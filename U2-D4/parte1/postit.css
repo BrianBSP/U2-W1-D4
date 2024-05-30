@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* creo la lavagna */
+.container-box {
+  max-width: 1000px;
+  min-height: 60vh;
+  margin-inline: auto;
+  margin-top: 2rem;
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* definisco le dimensioni e proprietà uguali per ogni post-it */
+.box {
+  width: 200px;
+  height: 185px;
+  border: 1px solid rgb(0 0 0/20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 22%);
+  background: linear-gradient(
+    to bottom,
+    rgba(207, 205, 205, 0.542),
+    rgba(63, 63, 63, 0.361)
+  );
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Indie Flower";
+}
+.box h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Indie Flower";
+}
+/* attribuisco a ogni post-it un'angolazione */
+.n1 {
+  background-color: rgb(255, 255, 185);
+  transform: rotate(350deg);
+}
+.n2 {
+  background-color: rgb(173, 235, 173);
+  transform: rotate(15deg);
+}
+.n3 {
+  background-color: rgb(206, 172, 251);
+  transform: rotate(350deg);
+}
+.n4 {
+  background-color: rgb(173, 235, 173);
+  transform: rotate(15deg);
+}
+.n5 {
+  background-color: rgb(255, 255, 185);
+  transform: rotate(350deg);
+}
+.n6 {
+  background-color: rgb(206, 172, 251);
+  transform: rotate(15deg);
+}
+.n7 {
+  background-color: rgb(255, 255, 185);
+  transform: rotate(350deg);
+}
+.n8 {
+  background-color: rgb(173, 235, 173);
+  transform: rotate(15deg);
+}
