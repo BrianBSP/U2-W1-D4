@@ -55,6 +55,14 @@ body {
     background-color: rgb(241, 124, 78);
   }
 }
+@keyframes moveRotation {
+  from {
+    transform: rotate(350deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
 .n1 {
   background-color: rgb(255, 255, 185);
   transform: rotate(350deg);
@@ -65,6 +73,7 @@ body {
   cursor: pointer;
   box-shadow: 0 6px 30px 0px rgb(0 0 0 / 20%);
   animation: colorShift 3s;
+  animation: moveRotation 300ms;
 }
 .n2 {
   background-color: rgb(173, 235, 173);
