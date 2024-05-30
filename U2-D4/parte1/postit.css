@@ -49,31 +49,34 @@ body {
 /* attribuisco a ogni post-it un'angolazione */
 @keyframes colorShift {
   from {
-    background-color: rgba(255, 255, 185, 0);
+    background-color: rgba(255, 255, 185, 0.375);
   }
   to {
     background-color: rgb(241, 124, 78);
   }
 }
-@keyframes moveRotation {
+/* @keyframes moveRotation {
   from {
     transform: rotate(350deg);
   }
   to {
     transform: rotate(2deg);
   }
+} */
+
+.box:hover {
+  scale: 1.4;
+  cursor: pointer;
+  box-shadow: 0 6px 30px 0px rgb(0 0 0 / 20%);
+  transform: rotate(2deg);
+  position: relative;
+  z-index: 1;
+  transition: transform 300ms;
+  animation: colorShift 3s;
 }
 .n1 {
   background-color: rgb(255, 255, 185);
-  transform: rotate(350deg);
-}
-
-.box:hover {
-  scale: 1.1;
-  cursor: pointer;
-  box-shadow: 0 6px 30px 0px rgb(0 0 0 / 20%);
-  animation: colorShift 3s;
-  animation: moveRotation 300ms;
+  transform: rotate(-10deg);
 }
 .n2 {
   background-color: rgb(173, 235, 173);
@@ -81,7 +84,7 @@ body {
 }
 .n3 {
   background-color: rgb(206, 172, 251);
-  transform: rotate(350deg);
+  transform: rotate(-10deg);
 }
 .n4 {
   background-color: rgb(173, 235, 173);
@@ -89,7 +92,7 @@ body {
 }
 .n5 {
   background-color: rgb(255, 255, 185);
-  transform: rotate(350deg);
+  transform: rotate(-10deg);
 }
 .n6 {
   background-color: rgb(206, 172, 251);
@@ -97,7 +100,7 @@ body {
 }
 .n7 {
   background-color: rgb(255, 255, 185);
-  transform: rotate(350deg);
+  transform: rotate(-10deg);
 }
 .n8 {
   background-color: rgb(173, 235, 173);
